@@ -314,32 +314,42 @@ As you develop the solution to this assignment you will need to complete at leas
 *Note: This is a big assignment, start early and work on getting simple things working first. **Remember the Baby Name App tutorial listed in the React section, provides a video tutorial walkthrough of many of the feaures you will be completing for this project.**
 
 1. Install Bootstrap 4, [there are 3  ways](https://getbootstrap.com/docs/4.3/getting-started/download/):
--- (1) npm install bootstrap (or yarn add bootstrap) - *Recommended*
---- Install other dependencies - see console log messages during install
-----`npm install bootstrap`
-----`npm install jquery@1.9.1`
-----`npm install typescript@*`
-----`npm install popper.js@^1.14.7`
---  (2) through CDN - simply add the link in head tag and script before closing body tag - see notes about additional CDNs for f jQuery and Popper.js before it.
---(3) download - ***great for project*** not recommended for Bootcamp #4 project
+   (1) npm install bootstrap (or yarn add bootstrap) - *Recommended*
+   -   Install other dependencies - see console log messages during install
+       -    `npm install bootstrap`
+       -    `npm install jquery@1.9.1`
+       -    `npm install typescript@*`
+       -    `npm install popper.js@^1.14.7`
+    (2) through CDN 
+       -   simply add the link in head tag and script before closing body tag
+       -   see notes about additional CDNs for jQuery and Popper.js before it.
+    (3) download - ***great for project*** not recommended for Bootcamp #4 project
 
     [Bootstrap Style Guide](https://drive.google.com/file/d/1fumbJT-ln-WzrSY_ZEtN44WhAw2asyXF/view) created for course 
     *You will use this later in the project when you start to style your page* 
 
 2. Install the [create-react-app](https://github.com/facebook/create-react-app#creating-an-app)
 To help us get started quickly, we will be using the create-react-app, a template generator for creating React Applciations quickly without having to install a ton of external dependencies. 
-1a. Run the command in terminal to create a starter application my-app (note: you can change this to bootcamp-2 if you like.)
-`npx create-react-app my-app`
-or
-`yarn create react-app my-app`
-or
-`npm init react-app my-app`
+
+Run the command in terminal to create a starter application my-app (note: you can change this to bootcamp4 if you like.)
+
+    `npx create-react-app my-app`
+
+    or
+
+    `yarn create react-app my-app`
+
+    or
+
+    `npm init react-app my-app`
 
 3.  after it is installed, you should be able to cd into the project directory 
 
 4. Inside the newly created project, you can run some built-in commands:
-`npm start` or `yarn start`
-Runs the app in development mode.
+
+    `npm start` or `yarn start`
+
+    Runs the app in development mode.
 
 5. It should auto-open http://localhost:3000 in the browser after it starts up a server for you. If a browser doesn't open up, copy and paste this link into your web brower with a starter page.
 
