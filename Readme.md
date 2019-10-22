@@ -120,15 +120,16 @@ A class component is the predominant way to define a React component. It also ac
 Note: Class components can only change their internal state, not their properties.
 
 [**Anatomy of a React Componnent**](https://codeburst.io/react-state-vs-props-explained-51beebd73b21)
-React components -   [Components](https://reactjs.org/docs/react-component.html)  
-Component names should also always start with a capital letter (<Wrapper/> not <wrapper/>). See [**documentation**](https://reactjs.org/docs/components-and-props.html#rendering-a-component) for more information on rendering components.
+
+[React Components](https://reactjs.org/docs/react-component.html)  
+Component names should also always start with a capital letter (`<Wrapper/> not <wrapper/>`). See [**documentation**](https://reactjs.org/docs/components-and-props.html#rendering-a-component) for more information on rendering components.
 
 All react Components have the following featuress:
--- *render()* - Mandatory
--- *constructor()*
--- *Import* - Import the functionality of this component in another component or the main app 
--- Usage *<component />* - Looks and is used similar to an HTML Tag to use the component in your application
--- *Export* - Makes the componenet accessible for us in other parts of the application
+- *render()* - Mandatory
+- *constructor()*
+- *Import* 
+- Usage *<component />* - Looks similar to an HTML Tag and is used by parent components to add the child component to your application
+- *Export* - Makes the componenet accessible for us in other parts of the application
 
 Components classes
 ```Javascript
@@ -157,8 +158,8 @@ export default Hello;
 ```
 This simple Hello Component takes in a value and when the nameUpdate function is called, it triggers a change state, and stores the name passed to it
 
-*Component Communication*
-State vs Props
+*Component Communication* -State vs Props
+
 In a React component, props carry data around your application. Props are variables passed to it by its parent component. State on the other hand are also variables, but directly initialized and managed by the component. The state can be initalized by props.
 
 The State and Props objects have one important difference. Inside a class component, the State object can be changed while the Props object represents fixed values.
@@ -198,7 +199,7 @@ Props are also used to allow child components to access methods defined in the p
 
 Most of your components will just display some kind of information based on the props they received, and stay stateless.
 
-**Getting Started with React**
+### Getting Started with React
 React certainly has a learning curve, and you should take some time going through tutorials to understand the basics. Below is a list of concepts and resources that may be helpful.
 
 [**React Vocabrulary**](https://reactjs.org/docs/glossary.html) - This is a must read as you are working though the assignment and tutorials.
@@ -264,15 +265,15 @@ For this assignment you will be building upon our UF directory application by cr
 - *app.css* - An empty file that we aren't using for this project but do not delete it as it will affect the functioning of your program
 - *index.js* - This file is used in creating the application file that you will be manipulating through the App.js file. This is where we have injected the data.js file and the building data that we pass around for the entire application.
 - *App.js* - This is the main application we are developing. The majority of our development will be in this file.
--- It prints out the directory listings
--- It has a Textbox for searching/filtering the results
--- It has a display box for printing out more details about the selected building
--- It imports and uses several React Component files to implement this functionality
+    - It prints out the directory listings
+    - It has a Textbox for searching/filtering the results
+    - It has a display box for printing out more details about the selected building
+    - It imports and uses several React Component files to implement this functionality
 
 - React Component Files - *React use compoenents to organize and squirrel away functionality so that we can reuse it in multiple places. Ultimately, it allows our code to look cleaner and maximizes reusability for future developmen.*
--- *BuildingList.js* - This is a React Component that prints the building code and the name to the screen
--- *Search.js*  - This is a React Component that filters the contents of the list based on the user's input in the textbox
--- *ViewBuilding.js* - This is a React Component that allows us to view additional listing details for the current selected building when a user clicks on a listing
+    - *BuildingList.js* - This is a React Component that prints the building code and the name to the screen
+    - *Search.js*  - This is a React Component that filters the contents of the list based on the user's input in the textbox
+    - *ViewBuilding.js* - This is a React Component that allows us to view additional listing details for the current selected building             when a user clicks on a listing
 
 #### Development Goals - To DO List:
 In this assignment, we are only focused on creating your front-end user interface to filter and display listings, as well as add new listings or delete existing listings.
@@ -280,37 +281,37 @@ In this assignment, we are only focused on creating your front-end user interfac
 As you develop the solution to this assignment you will need to complete at least the following tasks.  
 
 - App.js - Main Application
--- Create the filterUpdate() function - to set the state of filter
--- Create the selectUpdate() function - to set the state of selected building
+    - Create the filterUpdate() function - to set the state of filter
+    - Create the selectUpdate() function - to set the state of selected building
 
 - BuildingList.js: *In this file you will*
--- create a filter on the building list constant that allows you to filter on the name of the building 
--- display only the buldings the meet the filter criteria
--- Create an onClick listener action that will allow you to click on a building name and capture the ID
+    - create a filter on the building list constant that allows you to filter on the name of the building 
+    - display only the buldings the meet the filter criteria
+    - Create an onClick listener action that will allow you to click on a building name and capture the ID
 
 - Search.js: *In this file you will*
--- Capture the text that is typed into the textbox and store this value using the filterUpdate() function
--- use the onChange listener function
--- Note: You will need to understand how to use ref values from form inputs
+    - Capture the text that is typed into the textbox and store this value using the filterUpdate() function
+    - use the onChange listener function
+    - Note: You will need to understand how to use ref values from form inputs
 
 - ViewBuilding.js:
--- Captured building ID to look-up the additional information for the building
--- Return additional details of the building to be rendered on the screen for the user
+    - Captured building ID to look-up the additional information for the building
+    - Return additional details of the building to be rendered on the screen for the user
 
 - Create two new components that allow you to add and remove elements from the list.
-AddBuilding.js - Add a buliding to the listings
-RemoveBuilding.js - remove a building from the listings
+    - AddBuilding.js - Add a buliding to the listings
+    - RemoveBuilding.js - remove a building from the listings
 
 - index.css - Style the User Interface of this app using CSS and Bootstrap 4 to make this app look professional and user friendly, e.g., 
--- style the listings
--- add icons for search, add, and delete
--- search bar
--- buttons
--- card for viewing the selected listing (ViewBuilding.js)
+    - style the listings
+    - add icons for search, add, and delete
+    - search bar
+    - buttons
+    - card for viewing the selected listing (ViewBuilding.js)
 
 
 ### Setup
-*Note: This is a big assignment, start early and work on getting simple things working first. Remember the Baby Name App tutorial listed in the React section, provides a video tutorial walkthrough of many of the feaures you will be completing for this project.*
+*Note: This is a big assignment, start early and work on getting simple things working first. **Remember the Baby Name App tutorial listed in the React section, provides a video tutorial walkthrough of many of the feaures you will be completing for this project.**
 
 1. Install Bootstrap 4, [there are 3  ways](https://getbootstrap.com/docs/4.3/getting-started/download/):
 -- (1) npm install bootstrap (or yarn add bootstrap) - *Recommended*
