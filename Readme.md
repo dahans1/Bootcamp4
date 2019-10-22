@@ -333,15 +333,15 @@ To help us get started quickly, we will be using the create-react-app, a templat
 
 Run the command in terminal to create a starter application my-app (note: you can change this to bootcamp4 if you like.)
 
-    `npx create-react-app my-app`
+`npx create-react-app my-app`
 
-    or
+or
 
-    `yarn create react-app my-app`
+`yarn create react-app my-app`
 
-    or
+or
 
-    `npm init react-app my-app`
+`npm init react-app my-app`
 
 3.  after it is installed, you should be able to cd into the project directory 
 
@@ -360,7 +360,9 @@ Run the command in terminal to create a starter application my-app (note: you ca
 **See Development Goals** above for specific implemenetation details for this project.
 
 **Debugging Tips:** 
+
 (1) Use console.log statements in your render functions to print to the browser console to debug your program and to ensure you are passing the data around that you expected. This will help tremendously when you have errors that you can't figure out. 
+
 (2) Use [**React Developer Tools**](https://www.freecodecamp.org/news/how-to-see-your-react-state-props-in-the-browser-774098a50fcc/) - Download the React Developer Tools Chrome Plug-in, it is specifically designed to help you debug React applications.
 
 #### Submission: See Canvas for Submission Instructions
