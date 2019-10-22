@@ -320,9 +320,11 @@ As you develop the solution to this assignment you will need to complete at leas
        -    `npm install jquery@1.9.1`
        -    `npm install typescript@*`
        -    `npm install popper.js@^1.14.7`
+    
     (2) through CDN 
        -   simply add the link in head tag and script before closing body tag
        -   see notes about additional CDNs for jQuery and Popper.js before it.
+    
     (3) download - ***great for project*** not recommended for Bootcamp #4 project
 
     [Bootstrap Style Guide](https://drive.google.com/file/d/1fumbJT-ln-WzrSY_ZEtN44WhAw2asyXF/view) created for course 
